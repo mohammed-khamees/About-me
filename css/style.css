@@ -41,9 +41,103 @@ header li {
 
 /* end of header style */
 
+/* main style */
+main {
+	clear: both;
+}
 
+main a {
+	text-decoration: none;
+	font-weight: bold;
+	font-size: large;
+	color: indianred;
+	text-align: center;
+	display: block;
+	margin: 5rem;
+}
+
+main a:hover {
+	color: black;
+}
+
+main h2 {
+	width: 30rem;
+	font-size: 3rem;
+	font-family: 'Courier New', Courier, monospace;
+	margin: 8rem auto;
+	padding: 3rem;
+	text-align: center;
+	background-color: rgba(128, 128, 128, 0.404);
+	border-radius: 50px;
+}
+
+#aboutMe p {
+	clear: both;
+	font-weight: bold;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: 1.2rem;
+	display: inline-block;
+	margin-top: 3rem;
+	line-height: 2rem;
+}
+
+#aboutMe img {
+	float: left;
+	margin-left: 3rem;
+	margin-right: 3rem;
+}
+
+/* end of main style */
 
 /* footer style */
+footer {
+	clear: both;
+	margin-top: 5rem;
+}
+
+footer h2 {
+	width: 30rem;
+	font-size: 3rem;
+	font-family: 'Courier New', Courier, monospace;
+	margin: 15rem auto 6rem;
+	padding: 3rem;
+	text-align: center;
+	background-color: rgba(128, 128, 128, 0.404);
+	border-radius: 50px;
+}
+
+#contactMe {
+	width: 60rem;
+	margin: 5rem auto;
+}
+
+#contactMe form {
+	background-color: rgba(126, 26, 126, 0.178);
+	padding: 3rem;
+	border-radius: 3rem;
+}
+
+input,
+label,
+textarea {
+	display: block;
+	margin: 1rem auto;
+	text-align: center;
+}
+
+footer a {
+	text-decoration: none;
+	font-weight: bold;
+	font-size: large;
+	color: indianred;
+	text-align: center;
+	display: block;
+	margin: 5rem;
+}
+
+footer a:hover {
+	color: black;
+}
 
 /* end of footer style */
-
