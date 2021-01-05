@@ -53,11 +53,19 @@ main a {
 	color: indianred;
 	text-align: center;
 	display: block;
-	margin: 5rem;
+	margin: 2rem;
+	display: block;
+	clear: both;
+	background-color: rgba(62, 52, 196, 0.178);
+	padding: 1rem;
+	width: 7rem;
+	float: right;
 }
 
 main a:hover {
 	color: black;
+	outline: 0.3rem solid black;
+	offset: 3rem;
 }
 
 main h2 {
@@ -69,6 +77,10 @@ main h2 {
 	text-align: center;
 	background-color: rgba(128, 128, 128, 0.404);
 	border-radius: 50px;
+}
+
+#aboutMe {
+	clear: both;
 }
 
 #aboutMe p {
@@ -84,8 +96,52 @@ main h2 {
 
 #aboutMe img {
 	float: left;
-	margin-left: 3rem;
+	margin-left: 10rem;
 	margin-right: 3rem;
+	border-radius: 3rem;
+	background-color: black;
+}
+
+#aboutMe img:hover {
+	opacity: 0.6;
+}
+
+main h3 {
+	margin: 0 2rem;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+main .list {
+	overflow: hidden;
+	clear: both;
+	margin: 12rem 7rem 7rem 7rem;
+	padding: 2rem;
+	background-color: rgba(126, 26, 126, 0.178);
+	border-radius: 2rem;
+}
+
+main .hobbies {
+	float: left;
+	list-style-type: decimal;
+}
+
+main .hobbies li {
+	margin: 1rem 4rem;
+	font-size: 1.2rem;
+}
+
+main .edu {
+	float: left;
+	list-style-type: disc;
+	margin-left: 20rem;
+}
+
+main .edu li {
+	margin: 1rem 4rem;
+	font-size: 1.2rem;
 }
 
 /* end of main style */
@@ -100,7 +156,7 @@ footer h2 {
 	width: 30rem;
 	font-size: 3rem;
 	font-family: 'Courier New', Courier, monospace;
-	margin: 15rem auto 6rem;
+	margin: 11rem auto 6rem;
 	padding: 3rem;
 	text-align: center;
 	background-color: rgba(128, 128, 128, 0.404);
@@ -120,10 +176,21 @@ footer h2 {
 
 input,
 label,
-textarea {
+textarea,
+button {
 	display: block;
 	margin: 1rem auto;
 	text-align: center;
+	padding: 0.5rem;
+	font-size: large;
+	border-radius: 0.5rem;
+	cursor: pointer;
+}
+
+#contactMe form label {
+	font-weight: bold;
+	font-size: 1.2rem;
+	cursor: default;
 }
 
 footer a {
@@ -133,11 +200,19 @@ footer a {
 	color: indianred;
 	text-align: center;
 	display: block;
-	margin: 5rem;
+	margin: 2rem;
+	display: block;
+	clear: both;
+	background-color: rgba(62, 52, 196, 0.178);
+	padding: 1rem;
+	width: 7rem;
+	float: right;
 }
 
 footer a:hover {
 	color: black;
+	outline: 0.3rem solid black;
+	offset: 3rem;
 }
 
 /* end of footer style */
