@@ -100,8 +100,16 @@ if (attempt === 0) {
 	alert('Game Over, sorry about that the number is 50');
 }
 
-let multiAnswer = ['Berlin', 'Istanbul', 'London', 'Dubai'];
-for (let i = 6; i > 0; i--) {
+let multiAnswer = [
+	'Berlin',
+	'Istanbul',
+	'London',
+	'Dubai',
+	'Paris',
+	'New York',
+];
+
+for (let i = multiAnswer.length; i > 0; i--) {
 	let question = prompt(
 		`Which city is my favorite to live in? 1.Berlin 2.Istanbul 3.London 4.Dubai `,
 	);
