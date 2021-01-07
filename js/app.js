@@ -5,7 +5,7 @@ let correctAnswer = 0;
 while (yourName === '' || yourName === null) {
 	yourName = prompt("What's your name my friend?");
 }
-	alert('nice to meet you ' + yourName);
+alert('nice to meet you ' + yourName);
 alert(
 	"let's start our little gussing game " +
 		yourName +
@@ -62,35 +62,38 @@ answer(
 let footballer = prompt('Is my favorite player Schwanstiger?');
 answer(footballer, 'Is my favorite player Schwanstiger?', 'Schwanstiger');
 
-function call1(num){
-if (num > 60) {
-	// console.log('too high');
-	alert('too high');
-} else if (num < 40) {
-	// console.log('too low');
-	alert('too low');
-} else if (num === 50) {
-	// console.log("great you got it, It's 50");
-	alert("great you got it, It's 50");
-	correctAnswer++;
-	return;
-} else if (num <= 60 || num > 50 || num < 50 || num >= 40) {
-	// console.log('pretty close');
-	alert('pretty close');
+let flag = true;
+function call1(num) {
+	if (num > 60) {
+		// console.log('too high');
+		alert('too high');
+	} else if (num < 40) {
+		// console.log('too low');
+		alert('too low');
+	} else if (num === 50) {
+		// console.log("great you got it, It's 50");
+		alert("great you got it, It's 50");
+		if (flag) {
+			correctAnswer++;
+			flag = false;
+		}
+	} else if (num <= 60 || num > 50 || num < 50 || num >= 40) {
+		// console.log('pretty close');
+		alert('pretty close');
+	}
 }
-}
+
 let attempt = 4;
 do {
 	let num = parseInt(
 		prompt(`Now, ${yourName} guess a number from (1 - 100),please.`),
 	);
-	while (typeof num !== 'number' || num > 100 || num < 1) {
-		num = parseInt(
-			prompt(`Now, ${yourName} guess a number from (1 - 100),please.`),
-		);
-		
-	}
-	call1(num)
+	// while (typeof num !== 'number' || num > 100 || num < 1) {
+	// 	num = parseInt(
+	// 		prompt(`Now, ${yourName} guess a number from (1 - 100),please.`),
+	// 	);
+	// }
+	call1(num);
 	attempt--;
 } while (attempt > 0);
 
