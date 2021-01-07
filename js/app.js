@@ -32,11 +32,9 @@ const answer = (question, str, favorite) => {
 	}
 
 	if (question === 'yes' || question === 'y') {
-		// console.log("you're right");
 		alert("you're right");
 		correctAnswer++;
 	} else {
-		// console.log("I'm sorry wrong answer");
 		alert("I'm sorry wrong answer, It's " + favorite);
 	}
 };
@@ -65,20 +63,16 @@ answer(footballer, 'Is my favorite player Schwanstiger?', 'Schwanstiger');
 let flag = true;
 function call1(num) {
 	if (num > 60) {
-		// console.log('too high');
 		alert('too high');
 	} else if (num < 40) {
-		// console.log('too low');
 		alert('too low');
 	} else if (num === 50) {
-		// console.log("great you got it, It's 50");
 		alert("great you got it, It's 50");
 		if (flag) {
 			correctAnswer++;
 			flag = false;
 		}
 	} else if (num <= 60 || num > 50 || num < 50 || num >= 40) {
-		// console.log('pretty close');
 		alert('pretty close');
 	}
 }
@@ -88,11 +82,6 @@ do {
 	let num = parseInt(
 		prompt(`Now, ${yourName} guess a number from (1 - 100),please.`),
 	);
-	// while (typeof num !== 'number' || num > 100 || num < 1) {
-	// 	num = parseInt(
-	// 		prompt(`Now, ${yourName} guess a number from (1 - 100),please.`),
-	// 	);
-	// }
 	call1(num);
 	attempt--;
 } while (attempt > 0);
